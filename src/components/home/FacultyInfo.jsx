@@ -62,9 +62,24 @@ function FacultyInfo() {
         <div className="review-header">
           <div className="review-circle" />
           <p className="review-name">Name</p>
-          {renderStars(4)}
         </div>
-        <p className="review-text">he has very good notes and he gives marks</p>
+
+        <div className="rating-section">
+          <div className="rating-label">
+            <span>Overall:</span>
+            {renderStars(5)}
+          </div>
+          <div className="rating-label">
+            <span>Notes:</span>
+            {renderStars(4)}
+          </div>
+          <div className="rating-label">
+            <span>Marks:</span>
+            {renderStars(4)}
+          </div>
+        </div>
+
+        <p className="review-text">He has very good notes and he gives marks.</p>
       </div>
     </div>
   );
